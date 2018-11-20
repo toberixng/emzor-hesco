@@ -175,13 +175,13 @@ h6 {
 #intro {
   display: table;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background: #000;
 }
 
 #intro .carousel-item {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -593,10 +593,103 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f7f7f7;
 }
 
+/* Creative Feature Area css
+============================================================================================ */
+.creative_feature_area {
+  background: #f7f7f7;
+}
+
+.c_feature_box {
+  -webkit-box-shadow: 0px 25px 49px 0px rgba(58, 74, 88, 0.1);
+  box-shadow: 0px 25px 49px 0px rgba(58, 74, 88, 0.1);
+  border-radius: 2px;
+  background: #fff;
+  padding: 45px 0px;
+  margin-top: -100px;
+  z-index: 22;
+  position: relative;
+}
+
+.c_feature_box .col-lg-4:last-child .c_box_item:before {
+  display: none;
+}
+
+.c_box_item {
+  padding: 0px 35px 0px 40px;
+  position: relative;
+}
+
+.c_box_item:before {
+  content: "";
+  background: #e5e5e5;
+  height: 145px;
+  width: 1px;
+  position: absolute;
+  right: -15px;
+  top: 0px;
+}
+
+.c_box_item h4 {
+  font-size: 20px;
+  color: #232d37;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 36px;
+  padding-bottom: 10px;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+}
+
+.c_box_item h4 i {
+  padding-right: 10px;
+  color: #2bc0a4;
+}
+
+.c_box_item h4:hover {
+  color: #2bc0a4;
+}
+
+.c_box_item p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #51545f;
+  font-family: "Poppins", sans-serif;
+}
+
+.d_feature_text .main_title {
+  padding-bottom: 20px;
+}
+
+.d_feature_text p {
+  font-size: 14px;
+  color: #51545f;
+  font-family: "Poppins", sans-serif;
+  line-height: 26px;
+  padding-bottom: 12px;
+}
+
+.d_feature_text p + p {
+  padding-bottom: 0px;
+}
+
+.d_feature_text .read_btn {
+  margin-top: 34px;
+}
+
+.d_feature_img {
+  padding-left: 70px;
+}
+
+/* End Creative Feature Area css
+
+
+
+
 /* Featured Services Section
 --------------------------------*/
 
-#featured-services {
+/* #featured-services {
   background: #000;
 }
 
@@ -634,7 +727,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
   color: #fff;
   margin-bottom: 0;
-}
+} */
 
 /* About Us Section
 --------------------------------*/
