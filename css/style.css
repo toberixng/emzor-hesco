@@ -1565,7 +1565,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: -10px;
+  height: 10px;
 }
 
 #footer .credits {
