@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
             break;
 
           case 'checked':
-            if (!i.attr('checked')) {
+            if (! i.is(':checked')) {
               ferror = ierror = true;
             }
             break;

@@ -1,2 +1,2 @@
 Fully working PHP/AJAX contact form is available in the pro version.
-You can buy it from: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+You can buy it from: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
