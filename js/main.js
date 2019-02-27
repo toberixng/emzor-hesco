@@ -1,16 +1,95 @@
-(function ($) {
+(function($) {
   "use strict";
-  
-  // Preloader
-  $(window).on('load', function () {
-    if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function () {
-        $(this).remove();
-      });
+
+  /*--------------------------
+  preloader
+  ---------------------------- */
+  $(window).on('load', function() {
+    var pre_loader = $('#preloader');
+    pre_loader.fadeOut('slow', function() {
+      $(this).remove();
+    });
+  });
+
+  /*---------------------
+   TOP Menu Stick
+  --------------------- */
+  var s = $("#sticker");
+  var pos = s.position();
+  $(window).on('scroll', function() {
+    var windowpos = $(window).scrollTop() > 300;
+    if (windowpos > pos.top) {
+      s.addClass("stick");
+    } else {
+      s.removeClass("stick");
     }
   });
 
-  // Back to top button
+  /*----------------------------
+   Navbar nav
+  ------------------------------ */
+  var main_menu = $(".main-menu ul.navbar-nav li ");
+  main_menu.on('click', function() {
+    main_menu.removeClass("active");
+    $(this).addClass("active");
+  });
+
+  /*----------------------------
+   wow js active
+  ------------------------------ */
+  new WOW().init();
+
+  $(".navbar-collapse a:not(.dropdown-toggle)").on('click', function() {
+    $(".navbar-collapse.collapse").removeClass('in');
+  });
+
+  //---------------------------------------------
+  //Nivo slider
+  //---------------------------------------------
+  $('#ensign-nivoslider').nivoSlider({
+    effect: 'random',
+    slices: 15,
+    boxCols: 12,
+    boxRows: 8,
+    animSpeed: 500,
+    pauseTime: 5000,
+    startSlide: 0,
+    directionNav: true,
+    controlNavThumbs: false,
+    pauseOnHover: true,
+    manualAdvance: false,
+  });
+
+  /*----------------------------
+   Scrollspy js
+  ------------------------------ */
+  var Body = $('body');
+  Body.scrollspy({
+    target: '.navbar-collapse',
+    offset: 80
+  });
+
+  /*---------------------
+    Venobox
+  --------------------- */
+  var veno_box = $('.venobox');
+  veno_box.venobox();
+
+  /*----------------------------
+  Page Scroll
+  ------------------------------ */
+  var page_scroll = $('a.page-scroll');
+  page_scroll.on('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top - 55
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
+
+  /*--------------------------
+    Back to top button
+  ---------------------------- */
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -18,140 +97,116 @@
       $('.back-to-top').fadeOut('slow');
     }
   });
+
   $('.back-to-top').click(function(){
     $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
     return false;
   });
-  
-	var nav = $('nav');
-	var navHeight = nav.outerHeight();
 
-	/*--/ ScrollReveal /Easy scroll animations for web and mobile browsers /--*/
-	window.sr = ScrollReveal();
-	sr.reveal('.foo', { duration: 1000, delay: 15 });
+  /*----------------------------
+   Parallax
+  ------------------------------ */
+  var well_lax = $('.wellcome-area');
+  well_lax.parallax("50%", 0.4);
+  var well_text = $('.wellcome-text');
+  well_text.parallax("50%", 0.6);
 
-	/*--/ Carousel owl /--*/
-	$('#carousel').owlCarousel({
-		loop: true,
-		margin: -1,
-		items: 1,
-		nav: true,
-		navText: ['<i class="ion-ios-arrow-back" aria-hidden="true"></i>', '<i class="ion-ios-arrow-forward" aria-hidden="true"></i>'],
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true
-	});
+  /*--------------------------
+   collapse
+  ---------------------------- */
+  var panel_test = $('.panel-heading a');
+  panel_test.on('click', function() {
+    panel_test.removeClass('active');
+    $(this).addClass('active');
+  });
 
-	/*--/ Animate Carousel /--*/
-	$('.intro-carousel').on('translate.owl.carousel', function () {
-		$('.intro-content .intro-title').removeClass('zoomIn animated').hide();
-		$('.intro-content .intro-price').removeClass('fadeInUp animated').hide();
-		$('.intro-content .intro-title-top, .intro-content .spacial').removeClass('fadeIn animated').hide();
-	});
+  /*---------------------
+   Testimonial carousel
+  ---------------------*/
+  var test_carousel = $('.testimonial-carousel');
+  test_carousel.owlCarousel({
+    loop: true,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
+  });
+  /*----------------------------
+   isotope active
+  ------------------------------ */
+  // portfolio start
+  $(window).on("load", function() {
+    var $container = $('.awesome-project-content');
+    $container.isotope({
+      filter: '*',
+      animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false
+      }
+    });
+    var pro_menu = $('.project-menu li a');
+    pro_menu.on("click", function() {
+      var pro_menu_active = $('.project-menu li a.active');
+      pro_menu_active.removeClass('active');
+      $(this).addClass('active');
+      var selector = $(this).attr('data-filter');
+      $container.isotope({
+        filter: selector,
+        animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false
+        }
+      });
+      return false;
+    });
 
-	$('.intro-carousel').on('translated.owl.carousel', function () {
-		$('.intro-content .intro-title').addClass('zoomIn animated').show();
-		$('.intro-content .intro-price').addClass('fadeInUp animated').show();
-		$('.intro-content .intro-title-top, .intro-content .spacial').addClass('fadeIn animated').show();
-	});
+  });
+  //portfolio end
 
-	/*--/ Navbar Collapse /--*/
-	$('.navbar-toggle-box-collapse').on('click', function () {
-		$('body').removeClass('box-collapse-closed').addClass('box-collapse-open');
-	});
-	$('.close-box-collapse, .click-closed').on('click', function () {
-		$('body').removeClass('box-collapse-open').addClass('box-collapse-closed');
-		$('.menu-list ul').slideUp(700);
-	});
+  /*---------------------
+   Circular Bars - Knob
+--------------------- */
+  if (typeof($.fn.knob) != 'undefined') {
+    var knob_tex = $('.knob');
+    knob_tex.each(function() {
+      var $this = $(this),
+        knobVal = $this.attr('data-rel');
 
-	/*--/ Navbar Menu Reduce /--*/
-	$(window).trigger('scroll');
-	$(window).bind('scroll', function () {
-		var pixels = 50;
-		var top = 1200;
-		if ($(window).scrollTop() > pixels) {
-			$('.navbar-default').addClass('navbar-reduce');
-			$('.navbar-default').removeClass('navbar-trans');
-		} else {
-			$('.navbar-default').addClass('navbar-trans');
-			$('.navbar-default').removeClass('navbar-reduce');
-		}
-		if ($(window).scrollTop() > top) {
-			$('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
-		} else {
-			$('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
-		}
-	});
+      $this.knob({
+        'draw': function() {
+          $(this.i).val(this.cv + '%')
+        }
+      });
 
-	/*--/ Property owl /--*/
-	$('#property-carousel').owlCarousel({
-		loop: true,
-		margin: 30,
-		responsive: {
-			0: {
-				items: 1,
-			},
-			769: {
-				items: 2,
-			},
-			992: {
-				items: 3,
-			}
-		}
-	});
-
-	/*--/ Property owl owl /--*/
-	$('#property-single-carousel').owlCarousel({
-		loop: true,
-		margin: 0,  
-		nav: true,
-		navText: ['<i class="ion-ios-arrow-back" aria-hidden="true"></i>', '<i class="ion-ios-arrow-forward" aria-hidden="true"></i>'],
-		responsive: {
-			0: {
-				items: 1,
-			}
-		}
-	});
-
-	/*--/ News owl /--*/
-	$('#new-carousel').owlCarousel({
-		loop: true,
-		margin: 30,
-		responsive: {
-			0: {  
-				items: 1,
-			},
-			769: {
-				items: 2,
-			},
-			992: {
-				items: 3,
-			}
-		}
-	});
-
-	/*--/ Testimonials owl /--*/
-	$('#testimonial-carousel').owlCarousel({
-		margin: 0,
-		autoplay: true,
-		nav: true,
-		animateOut: 'fadeOut',
-		animateIn: 'fadeInUp',
-		navText: ['<i class="ion-ios-arrow-back" aria-hidden="true"></i>', '<i class="ion-ios-arrow-forward" aria-hidden="true"></i>'],
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		responsive: {
-			0: {
-				items: 1,
-			}
-		}
-	});
-
-/*Accordion*/
-
-
-
-/*Accordion End*/
-
+      $this.appear(function() {
+        $({
+          value: 0
+        }).animate({
+          value: knobVal
+        }, {
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.val(Math.ceil(this.value)).trigger('change');
+          }
+        });
+      }, {
+        accX: 0,
+        accY: -150
+      });
+    });
+  }
 
 })(jQuery);
