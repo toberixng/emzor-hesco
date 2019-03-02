@@ -1,299 +1,199 @@
-@media (min-width: 1920px) {
-  .work-right-text {
-    padding: 150px 150px;
-  }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-slides-content h2 {
+        font-size: 50px
+    }
+    .hero-area .owl-dots {
+        width: 930px
+    }
 }
-
-/* Normal desktop :992px. */
-
-@media (min-width: 992px) and (max-width: 1169px) {
-  .slider-content {
-    padding: 146px 0;
-  }
-  .work-right-text {
-    padding: 40px 0;
-  }
-  .work-right-text h2 {
-    font-size: 18px;
-    line-height: 28px;
-  }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-slides-content h2 {
+        font-size: 50px
+    }
+    .hero-area .owl-dots {
+        width: 690px
+    }
+    .hero-area,
+    .single-hero-slide {
+        height: 600px !important
+    }
+    .top-header-social-info a {
+        margin-right: 10px
+    }
+    .navbar {
+        padding: 0
+    }
+    .navbar-toggler {
+        font-size: 14px;
+        background-color: transparent;
+        border: none;
+        border-radius: 6px;
+        height: 35px;
+        margin: 33px 0;
+        border: 2px solid #262626
+    }
+    #medicaMenu {
+        margin-top: -2px;
+        padding: 30px;
+        background-color: #fff;
+        z-index: 1002;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15)
+    }
+    .header-area .main-menu .nav-link {
+        padding: 5px 15px
+    }
+    .header-search-form form input {
+        width: 570px;
+        margin-bottom: 15px
+    }
+    .medica-appointment-thumb,
+    .medica-about-thumbnail,
+    .medica-blog-sidebar-area {
+        margin-top: 100px
+    }
+    .footer-menu li a {
+        padding: 0 10px
+    }
+    .breadcumb-area {
+        height: 200px
+    }
+    .contact-form {
+        margin-bottom: 100px
+    }
 }
-
-/* Tablet desktop :768px. */
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .main-menu ul.navbar-nav li {
-    display: inline-block;
-    padding: 0 8px;
-  }
-  .layer-1-1 h2 {
-    font-size: 24px;
-  }
-  .layer-1-2 h1 {
-    font-size: 31px;
-    line-height: 38px;
-    padding: 0px 30px;
-  }
-  .stick .main-menu ul.navbar-nav li a {
-    padding: 24px 0px;
-  }
-  .tab-menu ul.nav li a {
-    padding: 10px 16px;
-  }
-  .suscribe-input input {
-    width: 60%;
-  }
-  .suscribe-input button {
-    width: 40%;
-  }
-  .team-content.text-center>h4 {
-    font-size: 20px;
-  }
-  .sus-btn {
-    margin-left: 0;
-  }
-  .suscribe-text h3 {
-    font-size: 16px;
-    padding-right: 20px;
-  }
-  .work-right-text h5 {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .work-right-text {
-    padding: 36px 0;
-  }
-  .work-right-text h2 {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .work-right-text .ready-btn {
-    font-size: 13px;
-    padding: 7px 20px;
-    margin-top: 5px;
-  }
-  .single-awesome-portfolio {
-    width: 33.33%;
-  }
-  .widget-product a img {
-    display: block;
-    float: none;
-    width: 100%;
-  }
-  .widget-product .product-info {
-    display: block;
-    float: none;
-    padding-left: 0;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .map-column {
-    margin-left: 0;
-    padding-right: 40px;
-  }
-  .post-information .entry-meta {
-    font-size: 13px;
-    padding: 5px 0;
-  }
-  .post-information .entry-meta span a {
-    padding: 4px 0;
-  }
-  .service-pic {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .single-add-itms {
-    width: 50%;
-  }
-  .left-sidebar-title>h4 {
-    font-size: 18px;
-  }
-  .contact-form {
-    margin-top: 0px;
-  }
-  .search-option input {
-    width: 67%;
-  }
-}
-
-/* small mobile :320px. */
-
-@media (max-width: 767px) {
-
-  .header-area {
-    height: 60px !important;
-    background: #fff;
-  }
-  .navbar-header a.navbar-brand, .stick .navbar-header a.navbar-brand {
-    display: inline-block;
-    height: 60px  !important;
-    padding: 9px 0;
-  }
-  .navbar-default .navbar-toggle, .stick .navbar-default .navbar-toggle {
-    padding: 15px 0;
-  }
-  .nav.navbar-nav.navbar-right, .stick .nav.navbar-nav.navbar-right {
-    background-color: rgb(0, 0, 0, 0.4);
-    padding: 0;
-    margin-top: 0;
-  }
-  .main-menu ul.navbar-nav li, .stick .main-menu ul.navbar-nav li {
-    display: block;
-  }
-  .main-menu ul.navbar-nav li a, .stick .main-menu ul.navbar-nav li a {
-    padding: 10px 2px;
-  }
-  .main-menu ul.navbar-nav li.active a::after, .stick .main-menu ul.navbar-nav li.active a::after {
-    border: 0px solid #000;
-  }
-  .logo {
-    height: inherit;
-    left: 0;
-    padding: 0;
-    position: absolute;
-    top: -6px;
-    z-index: 999999;
-  }
-  .logo a {
-    padding: 0;
-  }
-
-  .slider-area {
-    margin-top: 60px;
-  }
-
-  .slider-content h2 {
-    font-size: 18px !important;
-    line-height: 24px !important;
-  }
-  .slider-content h1 {
-    font-size: 20px !important;
-    line-height: 26px !important;
-  }
-
-  .layer-1-3 a.ready-btn {
-    padding: 8px 15px;
-  }
-  .section-headline h2 {
-    font-size: 30px;
-  }
-  .well-middle .single-well {
-    margin-top: 30px;
-  }
-  .single-skill {
-    margin-bottom: 40px;
-  }
-  .tab-menu {
-    margin-top: 30px;
-  }
-  .tab-menu ul.nav li a {
-    padding: 8px 6px;
-  }
-  .wellcome-text {
-    margin: 0px;
-    padding: 70px 0px;
-  }
-  .subs-feilds {
-    width: 100%;
-  }
-  .suscribe-input input {
-    width: 60%;
-  }
-  .suscribe-input button {
-    font-size: 15px;
-    padding: 14px 10px;
-    width: 40%;
-  }
-  .section-headline h3 {
-    font-size: 25px;
-  }
-  .well-text>h2 {
-    font-size: 18px;
-  }
-  .well-text p {
-    display: none;
-  }
-  .single-team-member {
-    margin-bottom: 30px;
-  }
-  .service-right {
-    width: 100%;
-  }
-  .service-images:hover .overly-text {
-    display: none;
-  }
-  .portfolio-area {
-    padding-top: 0px;
-  }
-  .project-menu li a {
-    padding: 8px 12px;
-    margin: 10px 4px;
-  }
-  .pri_table_list {
-    margin-bottom: 30px;
-  }
-  .single-awesome-project, .portfolio-2 .single-awesome-project {
-    width: 100%;
-    float: none;
-  }
-  .single-blog {
-    margin-bottom: 30px;
-  }
-  .sus-btn {
-    margin-left: 0;
-    margin-top: 30px;
-  }
-  .contact-form {
-    margin-top: 30px;
-  }
-  .head-team h5 {
-    font-size: 22px;
-  }
-  .footer-content {
-    margin-bottom: 30px;
-  }
-  .header-bottom h1 {
-    font-size: 30px;
-    margin-bottom: 0;
-  }
-  .page-area .slider-content {
-    padding: 100px 0;
-  }
-  .search-option input {
-    width: 74%;
-  }
-  .header-bottom h2 {
-    font-size: 20px;
-    margin-bottom: 0;
-  }
-  li.threaded-comments {
-    margin-left: 0;
-  }
-}
-
-/* Large Mobile :480px. */
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .submitbtn {
-    float: none;
-    width: 99.8%;
-  }
-  .icons-bottom ul li a {
-    height: 40px;
-    line-height: 37px;
-    width: 40px;
-  }
-  .blog-post-dlc ul li {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .awesome-portfolio-content .portfolio-2 {
-    width: 50%;
-  }
-  .gallary-details .single-awesome-portfolio {
-    width: 50%;
-  }
-  .tab-menu ul.nav li a {
-    padding: 8px 20px;
-  }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .top-header-area {
+        height: auto;
+        padding: 10px 0
+    }
+    .header-area {
+        height: auto
+    }
+    .top-menu ul li a {
+        padding: 0 5px;
+        font-size: 12px
+    }
+    .top-header-social-info {
+        margin-bottom: 10px;
+        margin-left: 5px
+    }
+    .navbar {
+        padding: 0
+    }
+    .navbar-toggler {
+        font-size: 14px;
+        background-color: transparent;
+        border: none;
+        border-radius: 6px;
+        height: 35px;
+        margin: 18px 0;
+        border: 2px solid #262626
+    }
+    #medicaMenu {
+        margin-top: -2px;
+        padding: 30px;
+        background-color: #fff;
+        z-index: 1002;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15)
+    }
+    .header-area .main-menu .nav-link {
+        padding: 5px 15px
+    }
+    .navbar-brand {
+        max-width: 100px
+    }
+    .header-search-form form input {
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 10px
+    }
+    .hero-slides-content h2 {
+        font-size: 30px
+    }
+    .hero-area .owl-dots {
+        width: 90%
+    }
+    .hero-area,
+    .single-hero-slide {
+        height: 500px !important
+    }
+    .hero-slides-content h5 {
+        font-size: 16px
+    }
+    .hero-area .owl-prev,
+    .hero-area .owl-next,
+    .medica-testimonials-area .owl-prev,
+    .medica-testimonials-area .owl-next {
+        width: 30px;
+        height: 30px;
+        line-height: 26px;
+        left: 20px;
+        margin-top: -15px
+    }
+    .hero-area .owl-next,
+    .medica-testimonials-area .owl-next {
+        left: auto;
+        right: 20px
+    }
+    .medica-btn {
+        height: 50px;
+        padding: 0 10px;
+        line-height: 46px;
+        font-size: 13px;
+        min-width: 100px
+    }
+    .medica-btn:hover,
+    .medica-btn:focus {
+        font-size: 13px
+    }
+    .medica-about-text ul li {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        max-width: 100%
+    }
+    .medica-appointment-thumb,
+    .medica-about-thumbnail {
+        margin-top: 100px
+    }
+    .section_heading h2 {
+        font-size: 30px
+    }
+    .copywrite-text {
+        text-align: center
+    }
+    .bottom-footer-area {
+        padding: 15px 0;
+        height: auto
+    }
+    .footer-menu li a {
+        padding: 0 5px
+    }
+    .copywrite-text {
+        margin-bottom: 10px
+    }
+    .main-header-area {
+        height: 70px
+    }
+    .footer-menu ul {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center
+    }
+    .breadcumb-area {
+        height: 150px
+    }
+    .cta-content {
+        margin-bottom: 50px
+    }
+    .medica-services-sidebar-area,
+    .contact-form {
+        margin-bottom: 100px
+    }
+    .medica-blog-sidebar-area {
+        margin-top: 100px
+    }
+    .single-pie-bar {
+        margin-bottom: 30px
+    }
 }
