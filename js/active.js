@@ -191,6 +191,3 @@
     });
 
 })(jQuery);
-
-
-// // :: 13.0 smooth scroll

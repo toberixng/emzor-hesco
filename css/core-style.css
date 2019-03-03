@@ -543,12 +543,6 @@ img {
     z-index: 1;
 }
 
-.is-sticky .main-header-area {
-    width: 100%;
-    z-index: 10000 !important;
-    background-color: #f2f4f8;
-    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.2);
-}
 
 .navbar {
     padding: 0;
@@ -629,6 +623,48 @@ img {
     background-color: transparent;
 }
 
+@media screen and (max-width: 990px){
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.8);
+        
+    }
+}
+
+@media screen and (max-width: 990px){
+    #searchbtn {
+        cursor: pointer;
+        margin-left: 15px;
+        color: #2f88fd;
+    }
+}
+
+@media screen and (max-width: 990px){
+    #searchbtn {
+        cursor: pointer;
+        margin-left: 15px;
+        color: #2f88fd;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .header-area .main-menu .nav-link {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0 20px;
+        color: #ffff !important;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+}
+
+.is-sticky .main-header-area {
+    width: 100%;
+    z-index: 10000 !important;
+    background-color: #f2f4f8;
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+
 /* :: 5.0 Welcome Area CSS */
 
 .hero-area,
@@ -636,6 +672,31 @@ img {
     position: relative;
     z-index: 1;
     width: 100%;
+}
+
+.gradient-slider-overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gradient-slider-overlay:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #243eff;
+    /* background: -webkit-linear-gradient(to right, #e71111, #243eff);
+    background: -webkit-linear-gradient(left, #e71111, #243eff); */
+    background: linear-gradient(to right, #943838, #243eff);
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 
@@ -1123,7 +1184,7 @@ select.form-control:not([size]):not([multiple]) {
 .emzor-hesco-call-to-action {
     position: relative;
     z-index: 1;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .single-cool-fact {
