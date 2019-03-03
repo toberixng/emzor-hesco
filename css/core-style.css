@@ -286,11 +286,7 @@ img {
     margin-bottom: 100px;
 }
 
-.bg-img {
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 .bg-default {
     background-color: #172538;
@@ -1735,3 +1731,6 @@ span.accor-open {
 .single-icon-box img {
     margin-bottom: 15px;
 }
+
+/* Our patner*/
+
