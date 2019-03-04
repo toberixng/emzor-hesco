@@ -701,10 +701,10 @@ img {
 }
 
 
-.hero-slides-content h2 {
+.hero-slides-content h3 {
     color: #fff;
-    font-size: 72px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
