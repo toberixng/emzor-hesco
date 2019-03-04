@@ -150,7 +150,7 @@ img {
     -webkit-animation: 2000ms linear 0s normal none infinite running emzor-hesco-load;
     animation: 2000ms linear 0s normal none infinite running emzor-hesco-load;
     background: transparent none repeat scroll 0 0;
-    border-color: #ffffff #ffffff #2f88fd;
+    border-color: #ffffff #ffffff #fd2f2f;
     border-radius: 50%;
     border-style: solid;
     border-width: 2px;
@@ -329,7 +329,7 @@ img {
 }
 
 .height-800 {
-    height: 800px !important;
+    height: 600px !important;
 }
 
 #scrollUp {
@@ -424,14 +424,14 @@ img {
 
 .emzor-hesco-btn.btn-2 {
     color: #fff;
-    background-color: #2f88fd;
-    border-color: #2f88fd;
+    background-color: #fd2f2f;
+    border-color: #fd2f2f;
 }
 
 .emzor-hesco-btn.btn-3 {
-    color: #2f88fd;
+    color: #fd2f2f;
     background-color: #fff;
-    border-color: #2f88fd;
+    border-color: #fd2f2f;
 }
 
 .emzor-hesco-btn.btn-4 {
@@ -441,7 +441,7 @@ img {
 }
 
 .emzor-hesco-btn.btn-5 {
-    color: #2f88fd;
+    color: #fd2f2f;
     background-color: #262626;
     border-color: #262626;
 }
@@ -449,8 +449,8 @@ img {
 .emzor-hesco-btn:hover,
 .emzor-hesco-btn:focus {
     color: #fff;
-    background-color: #2f88fd;
-    border-color: #2f88fd;
+    background-color: #fd2f2f;
+    border-color: #fd2f2f;
 }
 
 .gradient-background {
@@ -547,7 +547,7 @@ img {
 #searchbtn {
     cursor: pointer;
     margin-left: 15px;
-    color: #2f88fd;
+    color: #fd2f2f;
 }
 
 .header-search-form,
@@ -571,7 +571,7 @@ img {
 .header-area .main-menu .nav-item.active .nav-link,
 .header-area .main-menu .nav-link:hover,
 .header-area .main-menu .nav-link:focus {
-    color: #2f88fd;
+    color: #fd2f2f;
 }
 
 .dropdown-menu.show {
@@ -591,7 +591,7 @@ img {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    color: #2f88fd;
+    color: #fd2f2f;
     font-size: 13px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
@@ -606,7 +606,7 @@ img {
     color: #fff;
     border: none;
     background-color: transparent;
-    border: 2px solid #2f88fd;
+    border: 2px solid #fd2f2f;
     border-radius: 4px;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -615,7 +615,7 @@ img {
 
 .header-search-form form input:focus {
     box-shadow: none;
-    border-color: #2f88fd;
+    border-color: #fd2f2f;
     background-color: transparent;
 }
 
@@ -630,7 +630,7 @@ img {
     #searchbtn {
         cursor: pointer;
         margin-left: 15px;
-        color: #2f88fd;
+        color: #fd2f2f;
     }
 }
 
@@ -638,7 +638,7 @@ img {
     #searchbtn {
         cursor: pointer;
         margin-left: 15px;
-        color: #2f88fd;
+        color: #fd2f2f;
     }
 }
 
@@ -670,6 +670,10 @@ img {
     width: 100%;
 }
 
+/* .hero-area {
+    height: 100vh;
+} */
+
 .gradient-slider-overlay{
     position: absolute;
     z-index: 1;
@@ -687,11 +691,12 @@ img {
     z-index: -1;
     top: 0;
     left: 0;
-    background: #243eff;
+    /* background: #243eff; */
     /* background: -webkit-linear-gradient(to right, #e71111, #243eff);
     background: -webkit-linear-gradient(left, #e71111, #243eff); */
     background: linear-gradient(to right, #943838, #243eff);
-    opacity: 0.8;
+    /* background: rgba(0, 0, 0, 0.5); */
+    opacity: 0.7;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
@@ -820,7 +825,7 @@ img {
 
 .emzor-hesco-doctors-card,
 .emzor-hesco-department-card {
-    background-color: #2f88fd;
+    background-color: #fd2f2f;
 }
 
 .emzor-hesco-appointment-card {
@@ -872,7 +877,7 @@ img {
 .emzor-hesco-appointment-card .form-control {
     width: 100%;
     height: 40px;
-    background-color: #2f88fd;
+    background-color: #fd2f2f;
     border: none;
     border-radius: 0;
     font-size: 12px;
@@ -941,8 +946,8 @@ select.form-control:not([size]):not([multiple]) {
 .catagories-menu li a:hover,
 .catagories-menu li a:focus {
     padding-left: 20px;
-    border-bottom: 1px solid #2f88fd;
-    color: #2f88fd;
+    border-bottom: 1px solid #fd2f2f;
+    color: #fd2f2f;
 }
 
 .department-menu li:last-child a,
@@ -959,7 +964,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .emzor-hesco-about-text h2 span {
-    background-color: #2f88fd;
+    background-color: #fd2f2f;
     color: #fff;
     padding: 2px;
 }
@@ -996,7 +1001,7 @@ select.form-control:not([size]):not([multiple]) {
     left: 0;
     width: 8px;
     height: 8px;
-    background-color: #2f88fd;
+    background-color: #fd2f2f;
     border-radius: 50%;
     content: '';
 }
@@ -1040,7 +1045,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .emzor-hesco-services-text ul li {
-    /* background-color: #2f88fd; */
+    /* background-color: #fd2f2f; */
     color: #fff;
     padding: 2px;
 }
@@ -1116,9 +1121,9 @@ select.form-control:not([size]):not([multiple]) {
     display: inline-block;
     width: 33px;
     height: 33px;
-    color: #2f88fd;
+    color: #fd2f2f;
     border-radius: 50%;
-    border: 2px solid #2f88fd;
+    border: 2px solid #fd2f2f;
     line-height: 29px;
     font-size: 13px;
     margin: 0 5px;
@@ -1127,8 +1132,8 @@ select.form-control:not([size]):not([multiple]) {
 .doctor-social-info a:hover,
 .doctor-social-info a:focus {
     color: #fff;
-    border-color: #2f88fd;
-    background-color: #2f88fd;
+    border-color: #fd2f2f;
+    background-color: #fd2f2f;
 }
 
 .doctor-social-info {
@@ -1150,11 +1155,13 @@ select.form-control:not([size]):not([multiple]) {
     text-align: center;
 }
 
-.single-testimonial-slide .col-12 > h6 {
+.single-testimonial-slide .col-12 > h3 {
     color: #fff;
     line-height: 2.2;
     margin-bottom: 40px;
 }
+
+
 
 .testimonial-given-author-info img {
     width: 78px !important;
@@ -1259,7 +1266,7 @@ select.form-control:not([size]):not([multiple]) {
 .widget-post-content > p {
     margin-bottom: 0;
     font-size: 11px;
-    color: #2f88fd;
+    color: #fd2f2f;
 }
 
 .footer-widget-area ul > li > a {
@@ -1272,7 +1279,7 @@ select.form-control:not([size]):not([multiple]) {
 .footer-widget-area ul > li > a:focus,
 .footer-social-info a:hover,
 .footer-social-info a:focus {
-    color: #2f88fd;
+    color: #fd2f2f;
 }
 
 .bottom-footer-area {
@@ -1289,7 +1296,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .copywrite-text p a {
-    color: #2f88fd;
+    color: #fd2f2f;
     font-weight: 600;
 }
 
@@ -1312,7 +1319,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .footer-menu li a:hover,
 .footer-menu li a:focus {
-    color: #2f88fd;
+    color: #fd2f2f;
 }
 
 /* :: 13.0 Breadcumb Area CSS */
@@ -1390,7 +1397,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .single-department-area:hover > h6,
 .single-department-area:focus > h6 {
-    color: #2f88fd;
+    color: #fd2f2f;
 }
 
 /* :: 16.0 Services Area CSS */
@@ -1412,7 +1419,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .single-service a {
-    color: #2f88fd;
+    color: #fd2f2f;
     display: block;
     font-weight: 600;
 }
@@ -1445,7 +1452,7 @@ select.form-control:not([size]):not([multiple]) {
 .post-date > a {
     width: 125px;
     height: 38px;
-    background-color: #2f88fd;
+    background-color: #fd2f2f;
     display: block;
     color: #fff;
     line-height: 38px;
@@ -1471,7 +1478,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .post-content > a,
 .post-meta p a {
-    color: #2f88fd;
+    color: #fd2f2f;
 }
 
 .post-meta p:last-of-type a,
@@ -1507,9 +1514,9 @@ select.form-control:not([size]):not([multiple]) {
 .pagination .active .page-link,
 .pagination .page-link:hover,
 .pagination .page-link:focus {
-    color: #2f88fd;
+    color: #fd2f2f;
     background-color: #fff;
-    border: 2px solid #2f88fd;
+    border: 2px solid #fd2f2f;
 }
 
 /* :: 18.0 Contact Area CSS */
@@ -1602,7 +1609,7 @@ textarea.form-control {
 }
 
 .single-accordion h6 a.collapsed {
-    background-color: #2f88fd;
+    background-color: #fd2f2f;
     color: #fff;
 }
 
@@ -1673,7 +1680,7 @@ span.accor-open {
     position: relative;
     width: 0px;
     height: 100%;
-    background-color: #2f88fd;
+    background-color: #fd2f2f;
     z-index: 1;
 }
 
@@ -1687,7 +1694,7 @@ span.accor-open {
     left: 0px;
     position: absolute;
     z-index: 2;
-    background-color: #2f88fd;
+    background-color: #fd2f2f;
     color: #fff;
     width: 60px;
     height: 32px;
@@ -1719,7 +1726,7 @@ span.accor-open {
 }
 
 .single-cool-fact-area h2 {
-    color: #2f88fd;
+    color: #fd2f2f;
     font-size: 36px;
 }
 
@@ -1734,3 +1741,77 @@ span.accor-open {
 
 /* Our patner*/
 
+
+
+
+/*--------------------------------*/
+/* 4.Services Area
+/*--------------------------------*/
+/*--------------------------------*/
+/* 4.Services Area
+/*--------------------------------*/
+
+  
+  #service-padding {
+    padding-top: 20px;
+  }
+  .serviceBox{
+    border: 1px solid #ededed;
+    padding: 30px 30px 30px 90px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    background-color: #fff;
+  }
+  .serviceBox:hover{
+    border-color: #ef0808;
+  }
+  .serviceBox:before,
+  .serviceBox:after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    background: #ef0808;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+  }
+  .serviceBox:before{
+    top: -3px;
+  }
+  .serviceBox:after{
+    bottom: -3px;
+  }
+  .serviceBox:hover:before,
+  .serviceBox:hover:after{
+    left: 40px;
+    opacity: 1;
+  }
+  .serviceBox .service-icon{
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    left: 23px;
+    font-size: 45px;
+    color: #ef0808;
+    opacity: 0.3;
+    transition: all 0.5s ease-in 0s;
+  }
+  .serviceBox:hover .service-icon{
+    opacity: 1;
+  }
+  .serviceBox .title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #ef0808;
+    margin-bottom: 15px;
+  }
+  .serviceBox .description{
+    font-size: 13px;
+    color: #000;
+    line-height: 20px;
+  }
+  @media only screen and (max-width: 990px){
+    .serviceBox{ margin-bottom: 30px; }
+  }
