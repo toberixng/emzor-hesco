@@ -1177,6 +1177,12 @@ select.form-control:not([size]):not([multiple]) {
     margin-bottom: 40px;
 }
 
+.single-testimonial-slide .col-12 > h1 {
+    color: #fff;
+    line-height: 2.2;
+    margin-bottom: 10px;
+    font-weight: 500px;
+}
 
 
 .testimonial-given-author-info img {
