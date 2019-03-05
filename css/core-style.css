@@ -1870,7 +1870,7 @@ span.accor-open {
     border-radius: 0;
     position: relative;
 }
-#accordion .panel-title a.collapsed{ background: #1c2336;}
+#accordion .panel-title a.collapsed{ background: #2e3b86;}
 #accordion .panel-title a:before,
 #accordion .panel-title a.collapsed:before{
     content: "\f068";
