@@ -1937,6 +1937,8 @@ padding-top: 10px;
 }
 
 
+
+
 #accordion2 .panel{
     border: none;
     border-radius: 0;
@@ -1955,7 +1957,7 @@ padding-top: 10px;
     display: block;
     padding: 15px 20px;
     margin: 0;
-    background: #ef0808;
+    background: #2e3b86;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -1963,7 +1965,15 @@ padding-top: 10px;
     border-radius: 0;
     position: relative;
 }
-#accordion2 .panel-title a.collapsed{ background: #2e3b86;}
+
+.nothing {
+color: #2e3b86;
+color: #97a3e7;
+color: #dd6262;
+color: #ef0808;
+}
+
+#accordion2 .panel-title a.collapsed{ background: #dd6262;}   
 #accordion2 .panel-title a:before,
 #accordion2 .panel-title a.collapsed:before{
     content: "\f068";
@@ -1972,7 +1982,7 @@ padding-top: 10px;
     height: 30px;
     line-height: 25px;
     border-radius: 50%;
-    background: #ef0808;
+    background: #2e3b86;
     font-size: 14px;
     font-weight: normal;
     color: #fff;
@@ -1985,7 +1995,7 @@ padding-top: 10px;
 #accordion2 .panel-title a.collapsed:before{
     content: "\f067";
     background: #ababab;
-    border: 4px solid #626262;
+    border: 4px solid #f8f8fc;
 }
 #accordion2 .panel-title a:after,
 #accordion2 .panel-title a.collapsed:after{
@@ -2002,7 +2012,7 @@ padding-top: 10px;
     background: #ababab;
 }
 #accordion2 .panel-body{
-    border-left: 3px solid #ef0808;
+    border-left: 3px solid #2e3b86;
     border-top: none;
     background: #fff;
     /*font-size: 15px;*/
@@ -2014,7 +2024,7 @@ padding-top: 10px;
     content: "";
     height: 3px;
     width: 50%;
-    background: #ef0808;
+    background: #2e3b86;
     position: absolute;
     bottom: 0;
     left: 0;
