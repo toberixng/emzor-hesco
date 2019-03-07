@@ -1310,6 +1310,28 @@ select.form-control:not([size]):not([multiple]) {
     color: #fd2f2f;
 }
 
+ #social-facebook:hover,
+ #social-facebook:focus {
+    color: #3B5998;
+}
+
+#social-twitter:hover,
+ #social-twitter:focus {
+    color: #3CF;
+}
+
+#social-instagram:hover,
+ #social-instagram:focus {
+    color: #e4405f;
+}
+
+#social-linkedin:hover,
+ #social-linkedin:focus {
+    color: #0077B5;
+}
+
+
+
 .bottom-footer-area {
     background-color: #0b131e;
     width: 100%;
