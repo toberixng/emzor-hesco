@@ -289,7 +289,8 @@ img {
 
 
 .bg-default {
-    background-color: #172538;
+    /* background-color: #172538; */
+    background-color: #121a25;
 }
 
 .bg-gray {
@@ -1901,4 +1902,104 @@ padding-top: 10px;
         visibility: visible;
     }
 
+}
+
+
+
+
+
+
+/** OUR PRODUCTS**/
+
+.product-grid{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+.product-grid:hover{ box-shadow: 0 0 8px #999; }
+.product-grid .product-image{
+    overflow: hidden;
+    position: relative;
+}
+.product-grid .product-image a{ display: block; }
+.product-grid .product-image img{
+    width: 100%;
+    height: auto;
+}
+.product-grid .product-content{
+    padding: 15px;
+    position: relative;
+}
+.product-grid .title{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+    transition: all 0.3s ease 0s;
+}
+.product-grid .title a{ color: #222; }
+.product-grid .title a:hover{ color: #ff7700; }
+.product-grid .rating{
+    padding: 0;
+    margin: 0 0 7px;
+    list-style: none;
+}
+.product-grid .rating li{
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+}
+.product-grid .price{
+    color: #ff7700;
+    font-size: 18px;
+    font-weight: 600;
+}
+.product-grid .price span{
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-right: 7px;
+}
+.product-grid .product-links{
+    width: 90%;
+    opacity: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 55%;
+    transition: all 0.5s ease-in-out;
+}
+.product-grid:hover .product-links{
+    opacity: 1;
+    bottom: 100%;
+}
+.product-grid .add-to-cart{
+    color: #fff;
+    background-color: #ff7700;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: calc(100% - 90px);
+    padding: 9px 0 8px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+.product-grid .product-like-icon,
+.product-grid .product-compare-icon{
+    color: #fff;
+    background-color: #ff7700;
+    padding: 8px 12px;
+    display: inline-block;
+    float: left;
+    transition: all 0.3s ease 0s;
+}
+.product-grid .product-compare-icon{ float: right; }
+.product-grid .add-to-cart:hover,
+.product-grid .product-like-icon:hover,
+.product-grid .product-compare-icon:hover{
+    background-color: #ff5e14;
+    box-shadow: 0 0 7px #fff inset;
+}
+@media only screen and (max-width:990px){
+    .product-grid{ margin-bottom: 30px; }
 }
