@@ -2003,3 +2003,11 @@ padding-top: 10px;
 @media only screen and (max-width:990px){
     .product-grid{ margin-bottom: 30px; }
 }
+
+.padd-move {
+    padding: 10px 10px 10px 70px ;
+}
+
+.padd-move1 {
+    padding-top: 100px;
+}
