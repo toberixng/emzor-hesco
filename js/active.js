@@ -38,19 +38,19 @@
     }).trigger("resize");
 
     // :: 3.0 Sticky Active Code
-    $("#stickyHeader").sticky({
-        topSpacing: 0
-    });
+    // $("#stickyHeader").sticky({
+    //     topSpacing: 0
+    // });
 
     // :: 4.0 Tooltip Active Code
     $('[data-toggle="tooltip"]').tooltip()
 
     // :: 5.0 Nicescroll Active Code
-    $("body, textarea").niceScroll({
-        cursorcolor: "#151515",
-        cursorwidth: "6px",
-        background: "#f0f0f0"
-    });
+    // $("body, textarea").niceScroll({
+    //     cursorcolor: "#151515",
+    //     cursorwidth: "6px",
+    //     background: "#f0f0f0"
+    // });
 
     // :: 6.0 Owl Carousel Slider
     if ($.fn.owlCarousel) {
@@ -177,9 +177,9 @@
     if ($window.width() > 767) {
         new WOW().init();
 
-        // $('html, body').animate({
-        //     scrollTop: $($(this).attr('href')).offset().top
-        // }, 500, 'linear');
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 500, 'linear');
     }
 
     $('a[href*="#"]').on('click', function (e) {
