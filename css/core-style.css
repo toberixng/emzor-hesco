@@ -424,7 +424,16 @@ img {
 	height: 100px;
 	position: relative;
 	z-index: 1;
+	background: #fff;
 }
+
+/*this is used to fixed the menu on scroll*/
+.stickyTop {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 .navbar {
 	padding: 0;
 }
@@ -525,7 +534,7 @@ img {
 	box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.2);
 }
 
-.hero-area,.single-hero-slide {
+.emzor-slide-area,.single-hero-slide {
 	position: relative;
 	z-index: 1;
 	width: 100%;
@@ -601,7 +610,7 @@ img {
 	font-size: 22px;
 	font-weight: 600;
 }
-.hero-area .owl-prev,.hero-area .owl-next,.emzor-hesco-testimonials-area .owl-prev,.emzor-hesco-testimonials-area .owl-next {
+.emzor-slide-area .owl-prev,.emzor-slide-area .owl-next,.emzor-hesco-testimonials-area .owl-prev,.emzor-hesco-testimonials-area .owl-next {
 	width: 44px;
 	height: 44px;
 	position: absolute;
@@ -617,11 +626,11 @@ img {
 	-webkit-transition-duration: 300ms;
 	transition-duration: 300ms;
 }
-.hero-area .owl-next,.emzor-hesco-testimonials-area .owl-next {
+.emzor-slide-area .owl-next,.emzor-hesco-testimonials-area .owl-next {
 	left: auto;
 	right: 70px;
 }
-.hero-area .owl-dots {
+.emzor-slide-area .owl-dots {
 	width: 1110px;
 	position: absolute;
 	bottom: 35px;
@@ -629,7 +638,7 @@ img {
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
-.hero-area .owl-dot {
+.emzor-slide-area .owl-dot {
 	color: #fff;
 	display: inline-block;
 	font-size: 15px;
@@ -640,10 +649,10 @@ img {
 	line-height: 31px;
 	font-weight: 600;
 }
-.hero-area .owl-dot.active {
+.emzor-slide-area .owl-dot.active {
 	border: 2px solid #fff;
 }
-.hero-area:hover .owl-prev,.hero-area:hover .owl-next,.emzor-hesco-testimonials-area:hover .owl-prev,.emzor-hesco-testimonials-area:hover .owl-next {
+.emzor-slide-area:hover .owl-prev,.emzor-slide-area:hover .owl-next,.emzor-hesco-testimonials-area:hover .owl-prev,.emzor-hesco-testimonials-area:hover .owl-next {
 	opacity: 1;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }

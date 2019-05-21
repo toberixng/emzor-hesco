@@ -214,3 +214,18 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
         }
     }
 });
+
+
+
+window.onscroll = () => {menuScroll()};
+        
+        let stickyMenu = document.getElementById("stickyHeader");
+        let sticky = stickyMenu.offsetTop;
+        
+        function menuScroll() {
+          if (window.pageYOffset >= sticky) {
+            stickyMenu.classList.add("stickyTop")
+          } else {
+            stickyMenu.classList.remove("stickyTop");
+          }
+        }
