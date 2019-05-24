@@ -174,21 +174,21 @@
     });
 
     // :: 12.0 wow Active Code
-    // if ($window.width() > 767) {
-    //     new WOW().init();
+    if ($window.width() > 767) {
+        new WOW().init();
 
-    //     $('html, body').animate({
-    //         scrollTop: $($(this).attr('href')).offset().top
-    //     }, 500, 'linear');
-    // }
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset()
+        }, 500, 'linear');
+    }
 
-    // $('a[href*="#"]').on('click', function (e) {
-    //     e.preventDefault();
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault();
     
-    //     $('html, body').animate({
-    //         scrollTop: $($(this).attr('href')).offset().top
-    //     }, 500, 'linear');
-    // });
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset()
+        }, 500, 'linear');
+    });
 
 
 })(jQuery);
