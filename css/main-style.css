@@ -1653,6 +1653,7 @@ textarea.form-control {
 	padding: 10px 10px 10px 70px ;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
+	border-radius: 50%;
 }
 .padd-move1 {
 	padding-top: 100px;
