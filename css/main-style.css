@@ -1658,3 +1658,10 @@ textarea.form-control {
 .padd-move1 {
 	padding-top: 100px;
 }
+
+/*this is used to fixed the menu on scroll*/
+.stickyTop {
+	position: fixed;
+	top: 5px;
+	color: black;
+}
