@@ -1,75 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <section class="hero-area " id="home">
-        <div class="slider2">
-            <div class="slide2 current">
-              <div class="content">
-                <h1>slide2 One</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                  maxime, voluptatibus labore doloremque vero!
-                </p>
-              </div>
-            </div>
-            <div class="slide2">
-              <div class="content">
-                <h1>slide2 Two</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                  maxime, voluptatibus labore doloremque vero!
-                </p>
-              </div>
-            </div>
-            <div class="slide2">
-              <div class="content">
-                <h1>slide2 Three</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                  maxime, voluptatibus labore doloremque vero!
-                </p>
-              </div>
-            </div>
-            <div class="slide2">
-              <div class="content">
-                <h1>slide2 Four</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                  maxime, voluptatibus labore doloremque vero!
-                </p>
-              </div>
-            </div>
-            <div class="slide2">
-              <div class="content">
-                <h1>slide2 Five</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                  maxime, voluptatibus labore doloremque vero!
-                </p>
-              </div>
-            </div>
-            <div class="slide2">
-              <div class="content">
-                <h1>slide2 Six</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                  maxime, voluptatibus labore doloremque vero!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="buttons">
-            <button id="prev"><i class="fa fa-arrow-left"></i></button>
-            <button id="next"><i class="fa fa-arrow-right"></i></button>
-          </div>
-      
+<style>
+* {margin: 0; padding: 0;}
 
-    </section>
+a {text-decoration: none;}
+
+/* This class is added on scroll */
+.fixed-menu {
+	position: fixed;
+	top: 0;
+	height: 60px;
+	z-index: 1;
+    background-color: #B6DADA !important;
+}
+
+body {
+	color: #fff;
+	font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Navigation Settings */
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background: #CFCFCF;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	color: #9398AE;
+}
+
+section {
+	height: 100vh;
+}
+
+/* Content for demo */
+#content1 {
+	background: #60C4AF;
+}
+
+#content1 p {
+	padding-top: 200px;
+}
+
+#content2 {
+	background: #EBBD21;
+}
+
+#content2 p {
+	padding-top: 100px;
+    color:green;
+}
+
+#content3 {
+	background: #E89766;
+}
+
+@media only screen and (max-width: 520px) {
+
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 14px;
+	}
+
+}
+</style>
+</head>
+
+<body>
+<section id="content1">
+
+	<p>Scroll down</p>
+
+<nav>
+ <ul>
+   <li><a href="https://www.jquery-az.com/">Home</a></li>
+		 	  <li><a href="https://www.jquery-az.com/jquery-tips/">jQuery</a></li>
+		 	  <li><a href="https://www.jquery-az.com/bootstrap-tips-tutorials/">Bootstrap</a></li>
+		 	  <li><a href="https://www.jquery-az.com/css-tutorials/">CSS</a></li>
+		 	  <li><a href="https://www.jquery-az.com/angularjs-tutorials/">Angular JS</a></li>
+              <li><a href="https://www.jquery-az.com/javascript-tutorials/">JavaScript</a></li>
+ </ul>
+</nav>
+
+</section>
+
+<section id="content2">
+<p>A demo of fixed nav bar on scroll</p>
+</section>
+    
+<section id="content3"></section>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 60;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed-menu');
+			 }
+			 else {
+				 $('nav').removeClass('fixed-menu');
+			 }
+		});
+	});
+</script>
+
 </body>
 </html>
+

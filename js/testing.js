@@ -174,44 +174,21 @@
     });
 
     // :: 12.0 wow Active Code
-    if ($window.width() > 767) {
-        new WOW().init();
+    // if ($window.width() > 767) {
+    //     new WOW().init();
 
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset()
-        }, 500, 'linear');
-    }
+    //     $('html, body').animate({
+    //         scrollTop: $($(this).attr('href')).offset().top
+    //     }, 500, 'linear');
+    // }
 
-    $('a[href*="#"]').on('click', function (e) {
-        e.preventDefault();
+    // $('a[href*="#"]').on('click', function (e) {
+    //     e.preventDefault();
     
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset()
-        }, 500, 'linear');
-    });
+    //     $('html, body').animate({
+    //         scrollTop: $($(this).attr('href')).offset().top
+    //     }, 500, 'linear');
+    // });
 
 
 })(jQuery);
-
-
-/**Our parners control */
-$('#carouselExample').on('slide.bs.carousel', function (e) {
-
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 4;
-    var totalItems = $('.carousel-item').length;
-    
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i=0; i<it; i++) {
-            // append slides to end
-            if (e.direction=="left") {
-                $('.carousel-item').eq(i).appendTo('.carousel-inner');
-            }
-            else {
-                $('.carousel-item').eq(0).appendTo('.carousel-inner');
-            }
-        }
-    }
-});
