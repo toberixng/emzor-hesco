@@ -38,9 +38,9 @@
     }).trigger("resize");
 
     // :: 3.0 Sticky Active Code
-    // $("#stickyHeader").sticky({
-    //     topSpacing: 0
-    // });
+    $("#stickyHeader").sticky({
+        topSpacing: 0
+    });
 
     // :: 4.0 Tooltip Active Code
     $('[data-toggle="tooltip"]').tooltip()
