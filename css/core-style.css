@@ -16,6 +16,25 @@ html {
 	scroll-behavior: smooth;
   }
 
+  .hr-length1 {
+    width: 25%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;
+    background-color: #fd2f2f;
+}
+
+.hr-length2 {
+    width: 25%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;
+    background-color:#243eff;
+}
+
+
 .service-Content {
 	white-space: wrap;
 	width:100% ;

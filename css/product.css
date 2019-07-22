@@ -1,0 +1,21 @@
+/* .header-area {
+    margin-bottom: 150px !important;
+} */
+
+.hr-length1 {
+    width: 30%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;
+    background-color: #fd2f2f;
+}
+
+.hr-length2 {
+    width: 30%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;
+    background-color:#243eff;
+}
