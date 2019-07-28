@@ -20,4 +20,13 @@
     background-color:#243eff;
 }
 
+.img-wrap {
+    width: 100%;
+    height: auto;
+  }
 
+  .container > div > img {  
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+}
