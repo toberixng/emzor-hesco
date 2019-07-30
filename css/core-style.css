@@ -17,20 +17,20 @@ html {
   }
 
   .hr-length1 {
-    width: 15%;
+    width: 5%;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    height: 5px;
+    height: 2px;
     background-color: #fd2f2f;
 }
 
 .hr-length2 {
-    width: 15%;
+    width: 5%;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    height: 5px;
+    height: 2px;
     background-color:#243eff;
 }
 
